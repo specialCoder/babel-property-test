@@ -1,9 +1,13 @@
 
+// import 'core-js/stable';
+// import 'regenerator-runtime/runtime';
 
-const b = [1,2,3];
-const a = () => {
-    return b.includes(1)
-}
+// import other from './a';
+var b = [1,2,3];
+// const c = {
+//     cc:'ccc'
+// }
+var aa = b.includes(1);
 
 
-export default a;
+export default aa;

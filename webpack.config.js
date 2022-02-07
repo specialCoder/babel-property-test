@@ -1,4 +1,8 @@
 const path = require('path');
+const { execSync } = require('child_process');
+
+execSync('rm -rf dist/js')
+
 
 module.exports = {
   target:'web',
