@@ -1,0 +1,27 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                // Disable polyfill transforms
+                "useBuiltIns": "usage",
+                // "useBuiltIns": "entry",
+                // Do not transform modules to CJS
+                "modules": false,
+                // core 3
+                "corejs": 3
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "absoluteRuntime": false,
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": false
+            }
+        ],
+    ]
+}
